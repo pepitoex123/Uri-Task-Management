@@ -1,13 +1,13 @@
-import { isNotEmpty } from "class-validator";
+import { IsNotEmpty } from "class-validator";
 
 
 export class CreateTaskDto {
-    // @ts-ignore
-    @isNotEmpty()
+
+    @IsNotEmpty()
     title: string;
 
-    // @ts-ignore
-    @isNotEmpty()
+
+    @IsNotEmpty()
     description: string;
 }
 
